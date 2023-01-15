@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"Google Sans","Roboto",Arial,sans-serif;
+    line-height: 1.3;
+}
+a{
+    text-decoration: none;
+    color: #2e2e30;
+}
+/*===================================== header creation =================================*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+}
+.main-header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+.main-menu{
+    width: 600px;
+    height: 33px;
+    margin-top: 10px;
+}
+.logo-eatMoveLive img{
+    width: 200px;
+    height: 33px;
+    cursor: pointer;
+}
+.main-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family:"Google Sans","Roboto",Arial,sans-serif;
+    color: #2e2e30;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.dropdown-list ol{
+    padding: 20px 0;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    visibility: hidden;
+}
+.main-menu li:hover ol{
+    visibility: visible;
+    color: #2e2e30;
+}
+.dropdown-list ol li:hover{
+    background-color: #f6f8f8;
+}
+.main-menu li:hover,.main-menu a:hover{
+    color:#085dcc ;
+    cursor: pointer;
+}
+.dropdown-list li{
+    padding: 10px 15px;
+}
+button{
+    border: none;
+    background-color: white;
+    color: #1a73e8;
+    padding: 12px 24px 11px;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.sub-btn{
+    background-color: #1a73e8 ;
+    color: white;
+}
+.sign-btn{
+    border: 1px solid #dadce0;
+}
+.sub-btn:hover,.sub-intro button:hover {
+    background-color: #085dcc ;
+}
+.sign-btn:hover{
+    background-color: #dce0e0;
+    color:#085dcc ;
+    border-color: #1a73e8;
+}
+/*===================================== home section creation =================================*/
+#home{
+
+}
+.page-intro{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.page-intro img{
+    width: 400px;
+    height: 400px;
+    margin: 60px 60px 0 60px;
+}
+.sub-intro,.sub-intro2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    font-size: 60px;
+}
+
+.sub-intro p{
+    margin-right: 40px;
+    line-height: 1.5;
+}
+.sub-intro2 p{
+margin-right: 200px;
+} 
+.sub-intro button,.rangeBox button {
+    text-transform: uppercase;
+    background-color: #1a73e8 ;
+    color: white;
+    width: 300px;
+    font-size: 18px;
+margin-right: 70px;}
+.heightBoxContent button{
+    text-transform: uppercase;
+    background-color: #1a73e8 ;
+    color: white;
+    width: 100px;
+}
+.tools p{
+    text-align: center;
+    line-height: 1.5;
+}
+.toolsContent{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.toolsContent div {
+    border: 1px solid #d4d4d4;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+}
+.toolsContent div:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+}
+.toolsContent img{
+    width:100px ;
+    height: 100px;
+}
+
+/*===================================== know-your-body section creation =================================*/
+.welcome-box,.heightBoxContent{
+background-color: white;
+border-radius: 4px;
+height: 60%;
+width: 70%;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.welcomeMessage{
+    text-align: center;
+    line-height: 1.3;
+    color: #1a73e8;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.bothGenders {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 20px;
+
+}
+.gender,.activityLevels div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gender img,#ageBox img,#heightBox img,#weightBox img ,.activityLevels img{
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+
+}
+ .rangeBox{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;   
+    gap:20px;
+    margin-left: 60px;
+ }
+ .ageBoxContent{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 4px;
+ }
+.heightBoxContent div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+#heightBox ,#knowYourBody,#ageBox, #weightBox,#activityBox{
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(116, 115, 115, 0.9); 
+    z-index: 2;
+  }
+  .BoxContent{
+ background-color: white;
+border-radius: 4px;
+height: 60%;
+width: 70%;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+  .activityLevels{
+    display:flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  .resultContent{
+display: flex;
+justify-content: space-between;
+background-color: yellow;
+  }
+  .resultContent2{
+    display: flex;
+justify-content: space-between;
+background-color: red;
+  }
+  .resultContent3{
+    display: flex;
+justify-content: space-between;
+background-color:rgb(110, 193, 245);
+  }
+  .resultContent4{
+    display: flex;
+justify-content: space-between;
+background-color:rgb(13, 133, 207);
+  }
+  .resultContent h4{
+    background-image: url("./img/confetti.gif"); 
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .resultContent2 h4,.resultContent3 h4,.resultContent4 h4{
+    color:white;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .resultContent h5{
+   color: #1a73e8;
+   font-size: 30px;
+   margin-top: 30px;
+  }
+  .resultContent2 h5,.resultContent3 h5,.resultContent4 h5{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+   }
+
+  .resultIntro{
+    width: 500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+  }
+  .resultIntro2, .resultIntro3,.resultIntro4{
+     width: 500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+  }
+  .resultIntro2 span, .resultIntro3 span,.resultIntro4 span{
+    box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(207,207,207,0.75);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.3;
+    background-color: white;
+}
+  .defaultContent img{
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+  }
+  .defaultContent{
+    display: flex;
+  }
+  .rightPart{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .rightPart div:nth-child(2n){
+    background-color: #ffddbb;
+  }
+  .rightPart div:nth-child(2n+1){
+    background-color: #ccffcc;
+  }
+  .rightPart h4{
+    margin-bottom: 20px;
+  }
+  #result1,#result2,#result3,#result4{
+    display: none;
+  }
+  .dietImg img{
+    width: 800px;
+    height: 500px;
+    margin: 50px 0;
+}
+.dietImg{
+    display: flex;
+    justify-content: center;
+}
+.dietPlan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+.dietPlan h2{
+    color: #085dcc;
+}
+.dietPlan div{
+    border-radius: 6px;
+    width: 400px;
+    background-color: whitesmoke;
+    border: 1px solid #d4d4d4;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    line-height: 1.3;
+}
+.dietPlan ol,.diet ol{
+    list-style: circle;
+}
+.diet li,.dietPlan li{
+    padding-bottom: 20px;
+}
+.diet{
+    margin-top: 50px;
+    display: flex;
+}
+.diet div{
+padding: 20px 50px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+/*===================================== EAT BETTER SECTION=================================*/
+.eatIntro{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color:#21874e;
+    display: flex;
+    margin-bottom: 50px;
+}
+.eatIntro img{
+    width: 50%;
+    height: 100%;
+}
+.eatIntro div{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.eatIntro h1{
+    color: white;
+    font-size: 45px;
+    line-height: 60px;
+    margin-right: 200px;
+}
+.eatIntro p{
+    text-align:start;
+    color: white;
+    margin-left: 100px;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-right: 100px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 70px;
+    padding: 0 50px;
+
+}
+.infoCard{
+width: 200px;
+height: 270px;
+overflow: hidden;
+border-radius: 8px;
+position: relative;
+}
+.infoCard h3{
+    position: absolute;
+    left:10px;
+    bottom: 5px;
+    color:black;
+    font-weight: 900;
+}
+.infoCard img:hover{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.infoCard img{
+    width: 100%;
+    height: 100%;
+}
+#eatBetter{
+    margin-bottom: 100px;
+    display: none;
+}
+/*===================================== footer=================================*/
+
+.main-footer{
+    text-align: center;
+    border-top: 1px solid #d4d4d4;
+    font-size: 12px;
+    padding: 16px 0;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 50px;
+}
+.main-footer div{
+    display: flex;
+    justify-content: center
+    
+}
+.main-footer a{
+    color: #085dcc;
+    padding-right: 10px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
