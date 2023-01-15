@@ -484,10 +484,49 @@ position: relative;
     width: 100%;
     height: 100%;
 }
-#eatBetter{
+#eatBetter,#getFit{
     margin-bottom: 100px;
     display: none;
 }
+/*===================================== GET FIT=================================*/
+.fitIntro{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color:#4a4d8e;
+    display: flex;
+    margin-bottom: 50px;
+}
+.fitIntro img{
+    width: 50%;
+    height: 100%;
+}
+.fitIntro div{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.fitIntro h1{
+    color: white;
+    font-size: 45px;
+    line-height: 60px;
+    margin-right: 200px;
+}
+.fitIntro p{
+    text-align:start;
+    color: white;
+    margin-left: 100px;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-right: 100px;
+}
+/*===================================== Sign In=================================*/
+
+  
+  
+
 /*===================================== footer=================================*/
 
 .main-footer{

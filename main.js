@@ -87,7 +87,18 @@ document.querySelector("#eat-better-link").onclick = function () {
     dissContent("result4")
     dissContent("knowYourBody")
     getContent("eatBetter")
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
+}
+document.querySelector("#get-fit-link").onclick = function () {
+    dissContent("home")
+    dissContent("result1")
+    dissContent("result2")
+    dissContent("result3")
+    dissContent("result4")
+    dissContent("knowYourBody")
+    dissContent("eatBetter")
+    getContent("getFit")
+    window.scrollTo(0, 0)
 }
 document.querySelector("#logoBtn").onclick=function(){
     dissContent("result1")
@@ -96,6 +107,7 @@ document.querySelector("#logoBtn").onclick=function(){
     dissContent("result4")
     dissContent("knowYourBody")
     dissContent("eatBetter")
+    dissContent("getFit")
     getContent("home")
 }
 
