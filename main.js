@@ -56,6 +56,7 @@ dissContent("result2")
 dissContent("result3")
 dissContent("result4")
 dissContent("eatBetter")
+dissContent("getFit")
 var bmi=bmiCalcul()
 if((bmi<=24.9) && (bmi>=18.5)){
 getContent("result1")
@@ -110,6 +111,15 @@ document.querySelector("#logoBtn").onclick=function(){
     dissContent("getFit")
     getContent("home")
 }
+document.querySelector("#sign-in").onclick=()=>getContent("signIn")
+document.querySelector("#email").onclick=function(){
+    document.querySelector("#email").style.color="black"
+}
+document.querySelector("#password").onclick=function(){
+    document.querySelector("#password").style.color="black"
+}
+
+
 
 window.onload=function(){
     document.querySelector("#height").value=""

@@ -31,7 +31,7 @@
           </ul>
         </div>
         <div>
-            <button class="sign-btn">Sign in</button>
+            <button id="sign-in" class="sign-btn">Sign in</button>
             <button class="sub-btn">Create an account</button>
         </div>
        </header>  
@@ -123,7 +123,10 @@
     </div>
       </section>
   <section id="knowYourBody">
+    <div  class="cancelBtn" onclick="this.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px;" src="./img/cancel-svgrepo-com.svg" alt=""> </div>
     <div class="welcome-box">
+      <div  class="cancelBtn" onclick="this.parentElement.parentElement.style.display = 'none';"> <img  src="./img/cancel-svgrepo-com.svg" alt=""> </div>
+
       <div class="welcomeMessage">
       <h2>Welcome to EatMoveLive !<br> <br>ARE YOU ?</h2>
       </div>
@@ -141,6 +144,7 @@
   </section>
   <div id="ageBox">
     <div class="ageBoxContent">
+      <div  class="cancelBtn" onclick="this.parentElement.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px;"  src="./img/cancel-svgrepo-com.svg" alt=""> </div>
  <div class="welcomeMessage">
       <h2>What is Your Age Range?</h2>
       <img src="./img/age-group.png" alt="">
@@ -156,6 +160,7 @@
   </div>
   <div id="heightBox">
     <div class="heightBoxContent">
+      <div  class="cancelBtn" onclick="this.parentElement.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px;" src="./img/cancel-svgrepo-com.svg" alt=""> </div>
  <div class="welcomeMessage">
       <h2>How Tall are You?</h2>
       <img src="./img/height.png" alt="">
@@ -170,6 +175,7 @@
   </div>
   <div id="weightBox">
     <div class="heightBoxContent">
+      <div  class="cancelBtn" onclick="this.parentElement.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px;" src="./img/cancel-svgrepo-com.svg" alt=""> </div>
  <div class="welcomeMessage">
       <h2>How Much is Your Weight?</h2>
       <img src="./img/weight-loss.png" alt="">
@@ -184,13 +190,14 @@
   </div>
   <div id="activityBox">
     <div class="BoxContent">
+      <div  class="cancelBtn" onclick="this.parentElement.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px;" style="height: 20px;width: 20px;" src="./img/cancel-svgrepo-com.svg" alt=""> </div>
  <div class="welcomeMessage">
       <h2>How Active Are You?</h2>
       </div>
     <div class="activityLevels">
-      <div ><img src="./img/noactive.png" alt=""> <h4>Lightly Active</h4></div>
-      <div ><img src="./img/active.png" alt=""> <h4>Moderately Active</h4></div>
-      <div ><img src="./img/veryactive.png" alt=""> <h4>Very Active</h4></div>
+      <div ><img src="./img/lowactive.svg" alt=""> <h4>Lightly Active</h4></div>
+      <div ><img src="./img/modactive.svg" alt=""> <h4>Moderately Active</h4></div>
+      <div ><img src="./img/veryactive.svg" alt=""> <h4>Very Active</h4></div>
     </div>
   </div>
   </div>
@@ -201,7 +208,7 @@
      <h5> You Are Healthy !<br> </h5> 
      <span style="text-align: center;line-height: 1.3;">Your Body Mass Index Falls within the healthy range,by maintaining your current weight , you can lower the risk of you developing serious health problems!</span></div>
     <div>
-      <iframe src="https://giphy.com/embed/S2E0ieMDwHBw46HDzm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <img src="./img/rabbit1.webp" alt="" width="480" height="270">
     </div>
   </div>
   <div class="defaultContent">
@@ -222,7 +229,7 @@
      <h5> You Are UnderWeight !!!<br> </h5> 
      <span >Your Body Mass Index Falls within the Under Weight range,Having insufficient weight can increase the risk of malnutrition, osteoporosis, anemia, and a range of problems that can result from various nutrient deficiencies. It can also be a symptom of a hormonal, digestive, or other problem.<br> You will find below more helpfull tips and informations about your case.</span></div>
     <div>
-      <iframe src="https://giphy.com/embed/W1YUqoJ5lZyRGHZqza" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <img src="./img/rabbit2.webp" alt="" width="480" height="270">
     </div>
   </div>
   <div class="defaultContent">
@@ -297,7 +304,7 @@
    <h5> You Are OverWeight !!!<br> </h5> 
    <span >Your Body Mass Index Falls within the OverWeight range,Your current weight is above your ideal healthy weight.<br> Don't Worry ! We Got You .<br> You will find below helpfull tips and information to achieve your healthy weight.  </span></div>
   <div>
-    <iframe src="https://giphy.com/embed/IbgKMkLhoOtREgKaQk" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <img src="./img/rabbit3.webp" alt="" width="480" height="270">
   </div>
 </div>
 <div class="defaultContent">
@@ -364,8 +371,7 @@
    <h5> You Are Obese !!!<br> </h5> 
    <span >Your Body Mass Index Falls within the Obese range,The term obese describes a person who's very overweight, with a lot of body fat.It's a common problem that's estimated to affect around 1 in every 4 adults.<br> Don't Worry ! We Got You .<br> You will find below helpfull tips and information to achieve your healthy weight.  </span></div>
   <div>
-    <iframe src="https://giphy.com/embed/3UIjjZ3j2sE15q4Amp" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-  </div>
+<img src="./img/rabbit4.webp" alt="" width="480" height="270"></div>
 </div>
 <div class="defaultContent">
   <div> <img src="./img/shutterstock_186677255-1-scaled.jpg" alt="">
@@ -424,7 +430,40 @@
 </div>
 </div>
 <section id="signIn">
-  
+  <div  class="cancelBtn" onclick="this.parentElement.style.display = 'none';"> <img  src="./img/cancel-svgrepo-com.svg" alt=""> </div>
+
+  <div class="background">
+
+    <img src="./img/signup.jpg" alt="">
+    <div class="rightForm">
+<img style="width: 200px;height: 100px;margin-bottom: 30px;" src="./img/eatmoveliveseclolgo.png" alt="">
+  <form action="">
+    <div class="logo">
+    <img src="./img/userlogo.svg" alt="">
+    <input id="email" type="email" placeholder="EMAIL/ID"></div>
+   <div class="logo"><img src="./img/password-svgrepo-com.svg" alt=""><input id="password" type="password" placeholder="PASSWORD"></div> 
+    <div class="layoutH">
+      <input type="checkbox" id="checkbox">
+      <label for="">Remember Me</label>
+    <button class="sub-btn" type="submit" style="margin-left: 30px;">Sign In</button></div>
+    <div class="layoutH2">
+      <p style="text-decoration: underline;font-size: 12px;color:#085dcc ;cursor: pointer;">Subscribe Now</p>
+      <p style="color:gray ; font-size: 12px;cursor: pointer;">Forget Password ?</p>
+    </div>
+  </form>
+  <div style="margin-top: 30px;margin-bottom: 30px;height: 10px;width: 350px;">
+    <h5><span>or</span></h5></div>
+   <div style="display: flex; flex-direction: column;gap: 20px;">
+     <div class="logo"><img style="padding:0;border: none;" src="./img/facebook-color-svgrepo-com.svg" alt=""><h6 >LOGIN WITH FACEBOOK</h6></div> 
+    <div class="logo"><img style="padding:0;border: none;" src="./img/GMAIL.png" alt=""><h6 style="background-color: 	#DB4437;">LOGIN WITH GOOGLE</h6></div> 
+    <div class="logo"><img style="padding:0;border: none;" src="./img/twitter.png" alt=""><h6 style="background-color: 	#1DA1F2;">LOGIN WITH GOOGLE</h6></div> 
+  </div>
+  </div>
+</div>
+</section>
+<section id="foodScanner">
+<input type="text">
+
 </section>
   
   <footer class="main-footer"><div>
