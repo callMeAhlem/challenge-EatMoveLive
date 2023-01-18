@@ -19,6 +19,8 @@
             <li><a id="know-Your-Body-link" href="#knowYourBody" >Know Your Body</a></li>
             <li><a id="eat-better-link" href="#eatBetter">Eat Better</a></li>
             <li><a id="get-fit-link" href="#getFit">Get fit</a></li>
+            <li><a id="food-scanner-link" href="#foodScanner">Food Scanner</a></li>
+
             <li>More
              <div class="dropdown-list">
                <ol>
@@ -462,9 +464,67 @@
 </div>
 </section>
 <section id="foodScanner">
-<input type="text">
+  <div  class="cancelBtn2" onclick="this.parentElement.style.display = 'none';"> <img style="height: 20px;width: 20px; "  src="./img/cancel-svgrepo-com.svg" alt=""> </div>
+
+  <div class="container">
+    <img style="width: 300px;height: 300px; position: absolute; top:10%;z-index: 1;" src="./img/Disc_Plain_yellow_dark.svg.png" alt="">
+    <img style="width: 210px;height: 200px; position: absolute; top:20%; left: 5%;z-index:2;border-radius: 50%;"  src="./img/Foodguideplatev2.jpg" alt="">
+
+    <div class="logo">
+      <img  id="searchBtn" style="border: none;" src="./img/search-svgrepo-com.svg" alt="">
+      <input id="myInput" type="text" placeholder="Search here" value="">
+    </div>
+    <div id="breakdown">
+    <div style=" margin-left:0px;width: 300px;"><h3 id="foodName">For 100g of </h3></div>
+    <div class="nutrition">
+   <blockquote ><h3>Net Carbs</h3><span id="carb">g</span></blockquote>
+   <blockquote ><h3>Protein</h3><span id="protein">g</span></blockquote>
+   <blockquote ><h3>Fat</h3><span id="fat">g</span></blockquote>
+   <blockquote ><h3>Calories</h3><span id="calories">g</span></blockquote>
+  </div>
+  </div>
+  <div id="scannerIntro">
+    
+<h1>Log from over 14 million foods.</h1>
+<p>See a breakdown of calories and nutrients, compare serving sizes, and discover how the food you eat supports your goals.</p>
+  </div>
 
 </section>
+
+<div class="foodData">
+  <table id="foodTable">
+    <tr>
+      <th>food</th>
+      <th>carbs</th>
+      <th>protein</th>
+      <th>fat</th>
+      <th>calories</th>
+
+    </tr>
+    <tr>
+      <td>tomato</td>
+      <td>2.9</td>
+      <td>0.9</td>
+      <td>0.2</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>cake</td>
+      <td>40</td>
+      <td>0</td>
+      <td>20</td>
+      <td>350</td>
+    </tr>
+    <tr>
+      <td>banana</td>
+      <td>17.8</td>
+      <td>1</td>
+      <td>0.3</td>
+      <td>89</td>
+    </tr>
+  </table>
+
+</div>
   
   <footer class="main-footer"><div>
     <a href="">Home</a>

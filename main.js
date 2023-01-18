@@ -118,11 +118,48 @@ document.querySelector("#email").onclick=function(){
 document.querySelector("#password").onclick=function(){
     document.querySelector("#password").style.color="black"
 }
+document.querySelector("#food-scanner-link").onclick= function (){
+    getContent("foodScanner")
+    document.querySelector("#scannerIntro").style.display="flex"
 
 
+}
+var searchElt=document.getElementById('searchBtn');
+searchElt.addEventListener("click",function(){
+search();
+
+});
+
+function search(){
+var input,table,tr,td;
+ input=document.getElementById('myInput')
+table=document.getElementById('foodTable')
+for(i=1;i<table.rows.length;i++){
+   tr= table.rows.item(i).cells;
+    td =tr.item(0)
+    if (td.textContent===input.value){
+        document.querySelector("#scannerIntro").style.display="none"
+        document.querySelector("#breakdown").style.display="flex"
+        document.querySelector("#foodName").innerText+=" "+td.textContent
+        document.querySelector("#carb").textContent=tr.item(1).textContent+document.querySelector("#carb").textContent
+        document.querySelector("#protein").textContent=tr.item(2).textContent+document.querySelector("#protein").textContent
+        document.querySelector("#fat").textContent=tr.item(3).textContent+document.querySelector("#fat").textContent
+        document.querySelector("#calories").textContent=tr.item(4).textContent+document.querySelector("#calories").textContent
+
+    }
+    else{
+        document.querySelector("#scannerIntro").innerText="Food Not Found"
+
+
+    }
+
+}
+
+}
 
 window.onload=function(){
     document.querySelector("#height").value=""
     document.querySelector("#weight").value=""
+    document.getElementById('myInput').value=""
 
 }
